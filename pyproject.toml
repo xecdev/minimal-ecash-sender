@@ -5,11 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "minimal-ecash-sender"
 version = "0.1.0"
-description = "Minimal eCash (XEC) Electrum/Fulcrum client: build, sign, and broadcast P2PKH transactions from a wallet with BIP39 mnemonic."
+description = "Minimal eCash (XEC) Electrum ABC/Fulcrum client: build, sign, and broadcast P2PKH transactions from a wallet with BIP39 mnemonic."
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT License"}
-authors = [{ name = "xecdev", email = "" }]
+authors = [{ name = "xecdev", email = "ecashinformer@gmail.com" }]
 
 dependencies = [
   "bip-utils>=2.9.3",
