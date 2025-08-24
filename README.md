@@ -54,9 +54,6 @@ print(txid, raw_hex)
 - Only **P2PKH** is supported.
 - Default fee rate is **1 atom/byte**; adjust with `--fee-per-byte` if needed.
 
-<<<<<<< HEAD
-See `LICENSE`.
-=======
-See `LICENSE`.
+## LICENSE
+- See `LICENSE`.
 
->>>>>>> 1d1f3f7eecf88bc9effba6bfee7ded3956d96d20
