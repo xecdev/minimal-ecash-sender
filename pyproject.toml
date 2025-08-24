@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minimal-ecash-sender"
+version = "0.1.0"
+description = "Minimal eCash (XEC) Electrum/Fulcrum client: build, sign, and broadcast P2PKH transactions from a wallet with BIP39 mnemonic."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT License"}
+authors = [{ name = "xecdev", email = "" }]
+
+dependencies = [
+  "bip-utils>=2.9.3",
+  "ecdsa>=0.18.0",
+  "ecashaddress>=1.0.2",
+  "base58>=2.1.1",
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Internet",
+  "Topic :: Security :: Cryptography",
+]
+
+[project.urls]
+Homepage = "https://github.com/xecdev/minimal-ecash-sender"
+Issues = "https://github.com/xecdev/minimal-ecash-sender/issues"
+
+# Expose multiple CLIs to avoid breaking flows
+[project.scripts]
+minimal-ecash-send = "minimal_ecash_sender.cli:main"
+xec-send = "minimal_ecash_sender.cli:main"
+ecash-send = "minimal_ecash_sender.cli:main"
+
+[tool.setuptools]
+packages = ["minimal_ecash_sender"]
+include-package-data = true
